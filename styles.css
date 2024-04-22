@@ -72,17 +72,43 @@ span {
 
 p {
     line-height: 1em;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 img {
     width: 100%;
-    max-width: 500px;
-    margin-left: 600px;
+    max-width: 600px;
+    margin-left: 150px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+form [type="submit"]:hover {
+    opacity: 0.5;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
 }
